@@ -70,4 +70,6 @@ function render() {
 }
 ```
 
+Note that you'll want to fix your canvas size to the resolution you want your video rendered at.
+
 That's it. Watch your terminal to see the video rendering progress. `cvg` will tell you where to find it when it's done.
