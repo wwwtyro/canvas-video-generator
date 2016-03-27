@@ -1,0 +1,48 @@
+<html>
+
+  <head>
+
+    <script src='http://localhost:3172/cvg.js'></script>
+
+    <script>
+
+      window.onload = function() {
+
+        var canvas = document.createElement('canvas');
+        canvas.width = 640;
+        canvas.height = 360;
+        document.body.appendChild(canvas);
+
+        ctx = canvas.getContext('2d');
+
+        var count = 0;
+
+        function render() {
+          for (var i = 0; i < 640; i+=10) {
+            for (var j = 0; j < 360; j+=10) {
+              var c = Math.round(Math.random() * 255);
+              ctx.fillStyle = 'rgba(' + c + ', ' + c + ', ' + c + ', 1)';
+              ctx.fillRect(i, j, 10, 10);
+            }
+          }
+          cvg.addFrame(canvas);
+          count++;
+          if (count < 100) {
+            requestAnimationFrame(render);
+          } else {
+            cvg.render('example');
+          }
+        }
+
+        render();
+      }
+
+    </script>
+  </head>
+
+  <body>
+
+  </body>
+
+
+</html>

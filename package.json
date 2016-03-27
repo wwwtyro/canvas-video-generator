@@ -1,0 +1,37 @@
+{
+  "name": "canvas-video-generator",
+  "version": "1.0.0",
+  "description": "Generate smooth videos from browser canvas elements.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js & http-server -c-1"
+  },
+  "author": "Rye Terrell <wwwtyro@gmail.com> (http://wwwtyro.github.io)",
+  "license": "Unlicense",
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "express": "^4.13.4",
+    "marmottajax": "^2.2.0",
+    "minimist": "^1.2.0",
+    "sprintf": "^0.1.5",
+    "tmp": "0.0.28"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  },
+  "bin": {
+    "cvg": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwwtyro/canvas-video-generator.git"
+  },
+  "keywords": [
+    "canvas",
+    "video"
+  ],
+  "bugs": {
+    "url": "https://github.com/wwwtyro/canvas-video-generator/issues"
+  },
+  "homepage": "https://github.com/wwwtyro/canvas-video-generator#readme"
+}
