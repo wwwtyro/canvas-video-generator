@@ -9,6 +9,7 @@
   "author": "Rye Terrell <wwwtyro@gmail.com> (http://wwwtyro.github.io)",
   "license": "Unlicense",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "browserify": "^13.0.0",
     "express": "^4.13.4",
     "marmottajax": "^2.2.0",
